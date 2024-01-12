@@ -1,0 +1,35 @@
+{
+  "description": "Block selected IP v4 and v6 addresses",
+  "manifest_version": 2,
+  "name": "blockip",
+  "version": "0.2.1",
+  "homepage_url": "https://github.com/Code-4-IT/blockip",
+  "icons": {
+    "48": "icons/block.svg",
+    "96": "icons/block.svg"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "search",
+    "storage"
+  ],
+  "background": {
+    "page": "background/page.html"
+  },
+  "options_ui": {
+    "page": "resources/options.html",
+    "browser_style": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e563faf0-1b4d-1e2d-7533-a10e0de1c2f7}",
+      "strict_min_version": "68.0"
+    }
+  },
+  "web_accessible_resources": [
+    "resources/*",
+    "icons/*"
+  ]
+}
